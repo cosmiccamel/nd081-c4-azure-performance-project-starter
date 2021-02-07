@@ -27,7 +27,7 @@ from applicationinsights import TelemetryClient
 
 #Insights instruction key
 
-INSIGHTS_CONN_STRING = "InstrumentationKey=212e6c87-04ea-46ae-9f4d-97acb2e415c1;IngestionEndpoint=https://westus2-0.in.applicationinsights.azure.com/"
+INSIGHTS_CONN_STRING = "InstrumentationKey=e8de246b-54de-49fd-ab16-6cbc8753a2fd;IngestionEndpoint=https://westus2-0.in.applicationinsights.azure.com/"
 # Logging
 logger = logging.getLogger(__name__) # TODO: Setup logger
 
@@ -47,7 +47,7 @@ exporter = metrics_exporter.new_metrics_exporter(
 #    sampler=ProbabilitySampler(1.0),
 #)
 
-tracer = TelemetryClient('212e6c87-04ea-46ae-9f4d-97acb2e415c1')
+tracer = TelemetryClient('e8de246b-54de-49fd-ab16-6cbc8753a2fd')
 
 app = Flask(__name__)
 # Requests
